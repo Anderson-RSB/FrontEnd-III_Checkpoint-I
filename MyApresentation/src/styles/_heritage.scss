@@ -1,0 +1,15 @@
+%displayRadius {
+    display: block;
+    border-radius: 5px;
+}
+
+%sidebar {
+    background-color: black;
+    height: 100vh;
+    padding: 100px 25px 0;
+    position: fixed;
+    min-width: 250px;
+    top: 100px;
+    left: 0;
+    width: 250px;
+}

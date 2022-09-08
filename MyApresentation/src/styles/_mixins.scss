@@ -1,0 +1,5 @@
+@mixin displayFlex($vert, $hor) {
+    display: flex;
+    flex-direction: $vert;
+    justify-content: $hor;
+}

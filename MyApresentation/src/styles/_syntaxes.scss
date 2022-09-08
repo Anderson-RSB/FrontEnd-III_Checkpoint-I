@@ -1,0 +1,88 @@
+.l-sidebar {
+
+    &--open {
+        @extend %sidebar;
+        transition: all .5s;
+        transform: translateX(0);
+    }
+
+    &--close {
+        @extend %sidebar;
+        transition: all .5s;
+        transform: translateX(-250px);
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        color: $harmony03_second_color;
+        font-size: 1.5rem;
+        position: fixed;
+        margin: 40px 50px 40px 50px;
+    }
+
+}
+
+.l-page {
+    @include displayFlex(column, center);
+    min-height: 100vh;
+    padding: 50px;
+    width: 100%;
+
+    & .bg__profile {
+        background-image: url("./images/profile.webp");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    & p {
+        margin: 16px 0px;
+        text-align: justify;
+    }
+
+}
+
+.c-nav {
+    display: flex;
+    font-family: Arial Black, $defaultFont;
+    gap: 25px;
+
+    &__item {
+        font-size: 24px;
+        color: $harmony02_third_color;
+        text-decoration: none;
+    }
+
+}
+
+.c-form {
+    padding: 50px 0;
+    display: grid;
+    gap: 20px;
+
+    &__group {
+        @extend %displayRadius;
+    }
+
+    &__label {
+        @extend %displayRadius;
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+
+    &__control {
+        @extend %displayRadius;
+        padding: 10px;
+        width: 100%;
+        max-width: 450px;
+
+        &::placeholder {
+            font-family: $defaultFont;
+        }
+    }
+
+    &__error {
+        font-size: 1.1rem;
+        color: $harmony02_second_color;
+    }
+}
